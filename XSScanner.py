@@ -110,7 +110,7 @@ def main(argv):
     if (argv['path'] is not None):
         folder_path = argv['path']
         vulnerable = get_php_files_from_folder(folder_path)
-        if(len(vulnerable) > 1):
+        if vulnerable:
             with open(output_file, 'w+') as f:
                     f.write(json.dumps(vulnerable) + '\n')
     elif (argv['path'] is not None):
@@ -121,7 +121,7 @@ def main(argv):
                     f.write(json.dumps(vulnerable) + '\n')
     print(Fore.RED + '\n[-] {} Potential XSS Vulnerabilities Found.\n'.format(len(vulnerable)))
     if(argv['output']):
-        if(len(vulnerable) > 1):
+        if vulnerable:
             for vuln in vulnerable:
                 print(Fore.RESET + '-' * 40,end='\n')
                 print(Fore.RED + '\n[-] File: ' + vuln['file'])
@@ -132,7 +132,7 @@ def main(argv):
     
     print(Fore.RESET + '-' * 40,end='\n')
     print(Fore.GREEN + '\n[-] Scan Completed!')
-    if(len(vulnerable) > 1): print(Fore.LIGHTCYAN_EX + '\n[+] Scan Result Saved in: ' + output_file)
+    if vulnerable: print(Fore.LIGHTCYAN_EX + '\n[+] Scan Result Saved in: ' + output_file)
     print('\n')
             
                     
