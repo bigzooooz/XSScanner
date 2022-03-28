@@ -31,7 +31,7 @@ Current Version: 1.2.0
 #### Copy the directory you want to scan into `SCAN` folder then provide path with the `-d` flag
 `python XSScanner.py -d SCAN/exampleDirectory`
 
-#### To Scan and Validate Vulnerablity Against Live Target
+#### To Scan and Validate Vulnerablity Against Live Target Add `-t` flag
 
 `python XSScanner.py -d SCAN/exampleScript -t http://localhost/sameScript`
 
@@ -68,6 +68,26 @@ All Results Will Be Stored in `Results/{target_folder_name}/XSS-{timestamp}-outp
 
 Adding `-o` flag will STDOUT print results on screen.
 
+
+#### Output file
+```
+[
+  {
+    "file": "/exampleScript/admin/inc/navigation.php",
+    "line #": 116,
+    "code": "var page = '<?php echo isset($_GET['page']) ? $_GET['page'] : 'home' ?>';",
+    "source": "GET",
+    "sink": "echo",
+    "exploitation": [
+      {
+        "file": "admin/index.php?page=XSS_PAYLOAD",
+        "code": "<?php require_once('inc/navigation.php') ?>",
+        "parameter": "page"
+      }
+    ]
+  }
+]
+```
 -----
 ## License
 The XXScanner is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
