@@ -190,6 +190,7 @@ def main(argv):
             else:
                 print(Fore.MAGENTA + "[-] No Updates Available")
                 print(Fore.CYAN + "[-] Current Version: {0}".format(version))
+                status.update(Fore.GREEN + " Exiting...")
                 time.sleep(2)
                 exit()
 
