@@ -10,7 +10,7 @@
 
     Scanning PHP Files for XSS Vulnerabilities Never Been Any Easier!
  ```    
-Current Version: 1.2.0
+Current Version: 1.2.1
 
 -----
 
@@ -23,20 +23,30 @@ Current Version: 1.2.0
 3. `pip install requirements.txt`
 4. `python XSScanner.py -d <PATH>`
 
------
 
 
 ## Usage:
 
-#### Copy the directory you want to scan into `SCAN` folder then provide path with the `-d` flag
+#### Place the directory you want to scan into `SCAN` folder then provide path with the `-d` flag
 `python XSScanner.py -d SCAN/exampleDirectory`
 
+-----
+
 #### To Scan and Validate Vulnerablity Against Live Target Add `-t` flag
+
+**As of the currnet version (1.2.1), Attacking live target only:**
+
+**1. Works with _GET_ and _REQUEST_ methods**
+
+**2. Supports targets that requires not more than a single input _parameter_**
+
+**3. Able to validate against single target**
+
 
 `python XSScanner.py -d SCAN/exampleScript -t http://localhost/sameScript`
 
 *Output:*
-```
+```Shell
 [-] 3 Potential XSS Vulnerabilities Found.
 
 ----------------------------------------
@@ -53,8 +63,8 @@ Current Version: 1.2.0
 
 #### flags and usage help
 
-```
-usage: XSScanner.py [-h] (-f FILE | -p PATH) [-o]
+```Shell
+usage: XSScanner.py [-h] [-d DIRECTORY] [-t TARGET] [-o] [--update]
 
 options:
   -h, --help            show this help message and exit
@@ -70,7 +80,7 @@ Adding `-o` flag will STDOUT print results on screen.
 
 
 #### Output file
-```
+```json
 [
   {
     "file": "/exampleScript/admin/inc/navigation.php",
