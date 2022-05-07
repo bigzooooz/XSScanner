@@ -20,7 +20,7 @@ Current Version: 1.2.1
 
 1. `git clone https://github.com/bigzooooz/XSScanner`
 2. `cd XSScanner`
-3. `pip install requirements.txt`
+3. `pip install -r requirements.txt`
 4. `python XSScanner.py -d <PATH>`
 
 
