@@ -102,9 +102,9 @@ Adding `-o` flag will STDOUT print results on screen.
 
 ## CVEs Discoverd Using This Tool:
 
-_CVE-2022-28077_
+[CVE-2022-28077](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28077)
 
-_CVE-2022-28078_
+[CVE-2022-28078](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28078)
 
 -----
 ## License
