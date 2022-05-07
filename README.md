@@ -99,5 +99,13 @@ Adding `-o` flag will STDOUT print results on screen.
 ]
 ```
 -----
+
+## CVEs Discoverd Using This Tool:
+
+_CVE-2022-28077_
+
+_CVE-2022-28078_
+
+-----
 ## License
 The XXScanner is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
