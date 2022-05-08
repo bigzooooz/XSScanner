@@ -10,7 +10,7 @@
 
     Scanning PHP Files for XSS Vulnerabilities Never Been Any Easier!
  ```    
-Current Version: 1.2.1
+Current Version: 1.2.2
 
 -----
 
