@@ -1,6 +1,6 @@
 [![Python 3.6](https://img.shields.io/badge/Require-Python_3.x-blue)](https://www.python.org/downloads/)
 [![Python 3.6](https://img.shields.io/badge/Require-pip-blue)](https://www.pypi.org/project/pip/)
-
+<!--![GitHub All Releases](https://img.shields.io/github/downloads/lewdev/hw-gen/total)*/-->
  ```__   __ _____ _____                                 
  \ \ / // ____/ ____|                                
   \ V /| (___| (___   ___ __ _ _ __  _ __   ___ _ __ 
