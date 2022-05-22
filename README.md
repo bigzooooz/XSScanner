@@ -34,7 +34,7 @@ Current Version: 1.2.2
 
 #### To Scan and Validate Vulnerablity Against Live Target Add `-t` flag
 
-**As of the currnet version (1.2.1), Attacking live target only:**
+**As of the currnet version (1.2.2), Attacking live target only:**
 
 **1. Works with _GET_ and _REQUEST_ methods**
 
@@ -102,9 +102,12 @@ Adding `-o` flag will STDOUT print results on screen.
 
 ## CVEs Discoverd Using This Tool:
 
-[CVE-2022-28077](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28077)
+| CVE | Researcher | Publication
+|-----------|------------|---------|
+| [CVE-2022-28077](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28077) | [@b4zb0z](https://twitter.com/b4zb0z) | [Github](https://github.com/bigzooooz/CVE-2022-28077)
+| [CVE-2022-28078](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28078) | [@b4zb0z](https://twitter.com/b4zb0z) | [Github](https://github.com/bigzooooz/CVE-2022-28078)
 
-[CVE-2022-28078](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28078)
+_Add your findings by sending a DM to [@b4zb0z](https://twitter.com/b4zb0z) on Twitter_
 
 -----
 ## License
