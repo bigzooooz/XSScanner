@@ -10,7 +10,7 @@
 
     Scanning PHP Files for XSS Vulnerabilities Never Been Any Easier!
  ```    
-Current Version: 1.2.2
+Current Version: 1.3.0
 
 -----
 
@@ -28,13 +28,14 @@ Current Version: 1.2.2
 ## Usage:
 
 #### Place the directory you want to scan into `SCAN` folder then provide path with the `-d` flag
-`python XSScanner.py -d SCAN/exampleDirectory`
-
+`python XSScanner.py -d exampleDirectory`
+#### or without any flags to perform a bulk scan
+`python XSScanner.py`
 -----
 
 #### To Scan and Validate Vulnerablity Against Live Target Add `-t` flag
 
-**As of the currnet version (1.2.2), Attacking live target only:**
+**As of the currnet version (1.3.0), Attacking live target only:**
 
 **1. Works with _GET_ and _REQUEST_ methods**
 
@@ -43,7 +44,7 @@ Current Version: 1.2.2
 **3. Able to validate against single target**
 
 
-`python XSScanner.py -d SCAN/exampleScript -t http://localhost/sameScript`
+`python XSScanner.py -d exampleScript -t http://localhost/sameScript`
 
 *Output:*
 ```Shell
@@ -56,7 +57,7 @@ Current Version: 1.2.2
 
 [-] Scan Completed!
 
-[+] Scan Result Saved in: Results/exampleScript/XSScanner-032822-182205-output.json
+[+] Scan Result Saved in Results Folder
 
 ```
 
@@ -68,13 +69,13 @@ usage: XSScanner.py [-h] [-d DIRECTORY] [-t TARGET] [-o] [--update]
 
 options:
   -h, --help            show this help message and exit
-  -d PATH, --directory PATH  Used To Define The Path of a Folder To Scan
+  -d PATH, --directory PATH  Used To Define a Directory Path To Scan (all folders will be scan if not provided a name)
   -t TARGET, --target TARGET Used To Define a Target URI To Test Against
   -o, --output          Print Scan Output on Screen (default=false)
   --update              Update XSScanner
 ```
 
-All Results Will Be Stored in `Results/{target_folder_name}/XSS-{timestamp}-output.json` file.
+All Results Will Be Stored in `Results/{target_folder_name}/XSS-{target_folder_name}-{timestamp}-output.json` file.
 
 Adding `-o` flag will STDOUT print results on screen.
 
