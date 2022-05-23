@@ -29,8 +29,10 @@ Current Version: 1.3.0
 
 #### Place the directory you want to scan into `SCAN` folder then provide path with the `-d` flag
 `python XSScanner.py -d exampleDirectory`
+
 #### or without any flags to perform a bulk scan
 `python XSScanner.py`
+
 -----
 
 #### To Scan and Validate Vulnerablity Against Live Target Add `-t` flag
