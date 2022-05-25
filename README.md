@@ -109,6 +109,8 @@ Adding `-o` flag will STDOUT print results on screen.
 |-----------|------------|---------|
 | [CVE-2022-28077](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28077) | [@b4zb0z](https://twitter.com/b4zb0z) | [Github](https://github.com/bigzooooz/CVE-2022-28077)
 | [CVE-2022-28078](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28078) | [@b4zb0z](https://twitter.com/b4zb0z) | [Github](https://github.com/bigzooooz/CVE-2022-28078)
+| [CVE-2022-30513](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-30513) | [@b4zb0z](https://twitter.com/b4zb0z) | [Github](https://github.com/bigzooooz/CVE-2022-30513)
+| [CVE-2022-30514](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-30514) | [@b4zb0z](https://twitter.com/b4zb0z) | [Github](https://github.com/bigzooooz/CVE-2022-30514)
 
 _Add your findings by sending a DM to [@b4zb0z](https://twitter.com/b4zb0z) on Twitter_
 
